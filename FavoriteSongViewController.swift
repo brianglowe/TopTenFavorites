@@ -8,8 +8,10 @@
 
 import UIKit
 
-class FavoriteSongViewController: UIViewController {
+class FavoriteSongViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

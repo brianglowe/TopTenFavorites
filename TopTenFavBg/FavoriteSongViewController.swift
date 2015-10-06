@@ -8,8 +8,9 @@
 
 import UIKit
 
-class FavoriteSongViewController: UIViewController {
+class FavoriteSongViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,26 @@ class FavoriteSongViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    let songs = [
+        "Space Intro", "Fly Like an Eagle", "Wild Mountain", "Serenade", "Dance, Dance, Dance", "Mercury Blues", "Take the Money and Run", "Rock'n Me", "You Send Me", "Blue Odyssey"]
+    
+    let songTableIdentifier = "SongTableIdentifier"
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songs.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier(songTableIdentifier) as UITableViewCell!
+        
+        if(cell == nil) {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: songTableIdentifier)
+        }
+        
+        cell.textLabel?.text = songs[indexPath.row]
+        return cell
+    }
+
 
     /*
     // MARK: - Navigation

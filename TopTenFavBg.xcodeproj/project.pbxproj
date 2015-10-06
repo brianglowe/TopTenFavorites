@@ -14,6 +14,9 @@
 		D333482F1BC4680A00A3152C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D333482D1BC4680A00A3152C /* LaunchScreen.storyboard */; };
 		D333483A1BC4680A00A3152C /* TopTenFavBgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33348391BC4680A00A3152C /* TopTenFavBgTests.swift */; };
 		D33348451BC4680A00A3152C /* TopTenFavBgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33348441BC4680A00A3152C /* TopTenFavBgUITests.swift */; };
+		D33348551BC47CE500A3152C /* FavoriteSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33348541BC47CE500A3152C /* FavoriteSongViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D33348571BC4813F00A3152C /* FavoriteMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33348561BC4813F00A3152C /* FavoriteMoviesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D33348591BC481A100A3152C /* FavoriteBeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33348581BC481A100A3152C /* FavoriteBeersViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D33348401BC4680A00A3152C /* TopTenFavBgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopTenFavBgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33348441BC4680A00A3152C /* TopTenFavBgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenFavBgUITests.swift; sourceTree = "<group>"; };
 		D33348461BC4680A00A3152C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33348541BC47CE500A3152C /* FavoriteSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteSongViewController.swift; sourceTree = "<group>"; };
+		D33348561BC4813F00A3152C /* FavoriteMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteMoviesViewController.swift; sourceTree = "<group>"; };
+		D33348581BC481A100A3152C /* FavoriteBeersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteBeersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				D33348241BC4680A00A3152C /* AppDelegate.swift */,
 				D33348261BC4680A00A3152C /* ViewController.swift */,
+				D33348541BC47CE500A3152C /* FavoriteSongViewController.swift */,
+				D33348561BC4813F00A3152C /* FavoriteMoviesViewController.swift */,
+				D33348581BC481A100A3152C /* FavoriteBeersViewController.swift */,
 				D33348281BC4680A00A3152C /* Main.storyboard */,
 				D333482B1BC4680A00A3152C /* Assets.xcassets */,
 				D333482D1BC4680A00A3152C /* LaunchScreen.storyboard */,
@@ -255,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33348551BC47CE500A3152C /* FavoriteSongViewController.swift in Sources */,
 				D33348271BC4680A00A3152C /* ViewController.swift in Sources */,
 				D33348251BC4680A00A3152C /* AppDelegate.swift in Sources */,
+				D33348591BC481A100A3152C /* FavoriteBeersViewController.swift in Sources */,
+				D33348571BC4813F00A3152C /* FavoriteMoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +493,7 @@
 				D333484B1BC4680A00A3152C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D333484C1BC4680A00A3152C /* Build configuration list for PBXNativeTarget "TopTenFavBgTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +502,7 @@
 				D333484E1BC4680A00A3152C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D333484F1BC4680A00A3152C /* Build configuration list for PBXNativeTarget "TopTenFavBgUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				D33348511BC4680A00A3152C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
