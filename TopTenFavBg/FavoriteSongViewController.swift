@@ -25,7 +25,7 @@ class FavoriteSongViewController: UIViewController, UITableViewDelegate, UITable
     let songs = [
         "Space Intro", "Fly Like an Eagle", "Wild Mountain", "Serenade", "Dance, Dance, Dance", "Mercury Blues", "Take the Money and Run", "Rock'n Me", "You Send Me", "Blue Odyssey"]
     
-    let songTableIdentifier = "SongTableIdentifier"
+    let songTableIdentifier = "FavoriteSongs"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count

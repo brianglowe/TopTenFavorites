@@ -12,6 +12,7 @@ class FavoriteBeersViewController: UIViewController, UITableViewDataSource, UITa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "shorts.jpg")!)
 
         // Do any additional setup after loading the view.
     }
@@ -22,9 +23,9 @@ class FavoriteBeersViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     let beers = [
-        "Oberon", "MMMKay", "Hopslam", "Juicy Tree", "All Day IPA", "Huma Lupalicious"]
+        "Oberon", "MMMKay", "Hopslam", "Juicy Tree", "All Day IPA", "Huma Lupalicious", "Noble Chaos", "Christmas Ale","Chillwave", "Chatterbox"]
     
-    let beerTableIdentifier = "BeerTableIdentifier"
+    let beerTableIdentifier = "FavoriteBeers"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return beers.count

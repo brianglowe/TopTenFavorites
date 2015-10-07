@@ -24,7 +24,7 @@ class FavoriteMoviesViewController: UIViewController, UITableViewDelegate, UITab
     let movies = [
         "You gotta pay the troll toll, if you wanna get into that boy's soul. -Frank", "Mac, you have an exceptional number of bugs in your teeth. You're gonna wanna rinse those out. It's disgusting. -Dennis", "Grain alcohol, baby! Whenever there's a potential riot, I'm getting blasted on grain alcohol. -Mac", "Any amount of cheese before a date is too much cheese. -Dennis", "Smoke some cigarettes. The smoke will suffocate the bacteria in your stomach. -Mac", "Animals should be food, rugs and trophies. Why do you think I'm wearing a leather suit? -Frank", "Do not plug an open wound with trash. -Mac", "Wanna go get sweaty in the bathroom? -Frank", "If you're in my room, you're always being filmed. -Dennis", "I eat stickers all the time, dude! -Charlie"]
     
-    let movieTableIdentifier = "MovieTableIdentifier"
+    let movieTableIdentifier = "FavoriteMovies"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
